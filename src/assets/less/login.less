@@ -1,0 +1,58 @@
+.login {
+  background-color: @template-bg-nav;
+  overflow: hidden;
+  min-height: 100vh;
+
+  &-img-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/login-bg.jpg");
+    background-size: cover;
+  }
+
+  &-wrapper {
+    width: 100%;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+  }
+
+  &-zoomed {
+    width: auto;
+    max-height: 80vh;
+  }
+
+  &-logo {
+    height: 75px;
+    width: auto;
+  }
+
+  &-icon {
+    height: 100px;
+    width: auto;
+  }
+
+  &-title {
+    color: @template-text-title-color;
+    text-align: center;
+  }
+
+  &-form {
+    max-width: 300px;
+
+    &-forgot {
+      float: right;
+    }
+
+    &-button {
+      width: 75%;
+      display: block;
+      margin: 25px auto;
+    }
+  }
+
+  &-terms {
+    bottom: 0;
+    position: absolute;
+  }
+}

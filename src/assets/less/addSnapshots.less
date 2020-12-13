@@ -1,0 +1,116 @@
+.add-snapshots {
+  &-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0px -10px 20px 0px @shadow-color;
+
+    h3 {
+      @media only screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked) {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &-content {
+    padding: 36px 68px;
+
+    @media only screen and (max-width: 768px) {
+      padding: 36px 32px;
+    }
+
+    &-info {
+      margin: 52px 0;
+    }
+  }
+
+  &-table {
+    &-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h4 {
+        margin: 0 24px 2px 0;
+
+        @media only screen and (max-width: 768px) {
+          margin: 0 auto !important;
+        }
+      }
+
+      h5 {
+        margin: unset!important;
+        color: #636E88;
+
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+
+    &-content {
+      margin: 46px 0;
+    }
+
+    &-footer {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #636E88;
+
+      .ant-table-cell {
+        border-bottom: unset;
+      }
+    }
+  }
+
+  &-footer {
+    padding-top: 66px;
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: flex-end;
+
+    button:first-child {
+      margin-right: 12px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+
+  &-pd {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &-editable-cell {
+    cursor: pointer;
+  }
+
+  &-editable-cell:hover {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .editable-cell {
+    position: relative;
+  }
+
+  .ant-input-number {
+    width: 100%;
+  }
+}

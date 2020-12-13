@@ -1,0 +1,122 @@
+.dashboard {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: @template-bg-color;
+
+  &-header {
+    background-color: @template-bg-light;
+    padding: 0px;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 8px 6px -6px @shadow-color;
+  }
+
+  &-sider {
+    left: 0;
+    padding-top: 70px;
+    background-color: @template-bg-nav;
+    box-shadow: 1px 3px 3px 1px @shadow-color;
+  }
+
+  &-logo {
+    height: 45px;
+    margin: 15px;
+  }
+
+  &-nav {
+    font-size: 14px;
+    margin-top: 35px;
+    min-height: 100vh;
+    background-color: @template-bg-nav;
+  }
+
+  &-content {
+    background-color: @template-bg-light;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 1px @shadow-color;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &-inner {
+    padding: 0px;
+  }
+
+  &-user {
+    height: 45px;
+    margin: 15px;
+  }
+
+  &-icon {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    color: #1890ff;
+  }
+
+  &-rect {
+    &-ylo {
+      width: 100%;
+      border-radius: 10px;
+      background-size: cover;
+      box-shadow: 1px 3px 0px 1px @shadow-color;
+      background: url("../images/rect-yellow.png") center;
+    }
+
+    &-grn {
+      width: 100%;
+      border-radius: 10px;
+      background-size: cover;
+      box-shadow: 1px 3px 0px 1px @shadow-color;
+      background: url("../images/rect-green.png") center;
+    }
+
+    &-org {
+      width: 100%;
+      border-radius: 10px;
+      background-size: cover;
+      box-shadow: 1px 3px 0px 1px @shadow-color;
+      background: url("../images/rect-orange.png") center;
+    }
+
+    &-blu {
+      width: 100%;
+      border-radius: 10px;
+      background-size: cover;
+      box-shadow: 1px 3px 0px 1px @shadow-color;
+      background: url("../images/rect-blue.png") center;
+    }
+  }
+
+  &-subheader {
+    position: absolute;
+    margin-left: 3rem;
+    top: 84px;
+  }
+
+  .fixed-side {
+    position: fixed;
+    z-index: 1;
+    max-width: 200px;
+    transition: width 0s;
+
+    &-closed {
+      width: 80px;
+      transition: width 0s;
+    }
+  }
+}
+
+.trigger {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  background-color: @template-bg-nav;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
