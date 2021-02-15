@@ -18,11 +18,6 @@ const RegisterForm = () => {
   const onFinish = () => {
     let user = { name: name, email: email, password: password };
     console.log(JSON.stringify(user));
-<<<<<<< HEAD
-=======
-
-    window.location.href = "/dashboard";
->>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
   };
 
   return (
@@ -81,16 +76,7 @@ const RegisterForm = () => {
       </Form.Item>
 
       <Form.Item>
-<<<<<<< HEAD
-        <Button
-          href="/dashboard"
-          type="primary"
-          htmlType="submit"
-          className="login-form-button"
-        >
-=======
-        <Button type="primary" htmlType="submit" className="login-form-button">
->>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
+        <Button type="primary" href="/dashboard" className="login-form-button">
           Sign up
         </Button>
       </Form.Item>

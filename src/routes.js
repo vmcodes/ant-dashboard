@@ -1,9 +1,6 @@
 import React from "react";
 // Views
-<<<<<<< HEAD
-=======
 import LandingPage from "./views/LandingPage";
->>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
 import Login from "views/Login";
 import Home from "views/Home";
 import ManageProfile from "views/ManageProfile";
@@ -21,11 +18,6 @@ import {
 // Routes
 export const Routes = [
   {
-<<<<<<< HEAD
-    View: Login,
-    Name: "Login",
-    Location: "/",
-=======
     View: LandingPage,
     Name: "Landing Page",
     Location: "/",
@@ -35,7 +27,6 @@ export const Routes = [
     View: Login,
     Name: "Login",
     Location: "/login",
->>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
     Layout: "home",
   },
   {
