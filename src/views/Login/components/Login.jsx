@@ -6,6 +6,10 @@ import {
   EyeInvisibleOutlined,
   EyeTwoTone,
 } from "@ant-design/icons";
+<<<<<<< HEAD
+=======
+import { fetchToken } from "slices/token";
+>>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
 
 const { Text } = Typography;
 
@@ -16,9 +20,14 @@ const LoginForm = () => {
   const onFinish = () => {
     let user = { email: email, password: password };
 
+<<<<<<< HEAD
     console.Console.log(JSON.stringify(user));
   };
 
+=======
+    fetchToken(user);
+  };
+>>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
   return (
     <Form name="login" className="login-form" onFinish={onFinish}>
       <Form.Item>
@@ -59,12 +68,16 @@ const LoginForm = () => {
       </Form.Item>
 
       <Form.Item>
+<<<<<<< HEAD
         <Button
           href="/dashboard"
           type="primary"
           htmlType="submit"
           className="login-form-button"
         >
+=======
+        <Button type="primary" htmlType="submit" className="login-form-button">
+>>>>>>> fddb2b584b742528392fc96919e86f6a24d555c9
           Log in
         </Button>
       </Form.Item>
