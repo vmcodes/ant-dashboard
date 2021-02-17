@@ -25,11 +25,16 @@ const Pricing = () => {
           <Title type="secondary" level={3} className="my-3">
             $10<small>/Month</small>
           </Title>
-          <h5 className="pricing-info my-3">Unlimited storage</h5>
+          <h5 className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/storage-icon.png")} />{" "}
+            Unlimited storage
+          </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/support-icon.png")} />{" "}
             Full support 3 days
           </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/security-icon.png")} />{" "}
             Security guaranteed
           </h5>
 
@@ -45,17 +50,24 @@ const Pricing = () => {
           <Title type="secondary" level={3} className="my-3">
             $30<small>/Month</small>
           </Title>
-          <h5 className="pricing-info my-3">Unlimited storage</h5>
+          <h5 className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/storage-icon.png")} />{" "}
+            Unlimited storage
+          </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/support-icon.png")} />{" "}
             Full support 30 days
           </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/security-icon.png")} />{" "}
             Security guaranteed
           </h5>
           <h5 level={5} className="pricing-info my-3">
-            Additional cloud Storage
+            <img alt="icon" src={require("assets/images/cloud-icon.png")} />{" "}
+            Additional cloud storage
           </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/email-icon.png")} />{" "}
             Email support
           </h5>
 
@@ -69,13 +81,18 @@ const Pricing = () => {
             Silver
           </Title>
           <Title type="secondary" level={3} className="my-3">
-            $10<small>/Month</small>
+            $20<small>/Month</small>
           </Title>
-          <h5 className="pricing-info my-3">Unlimited storage</h5>
+          <h5 className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/storage-icon.png")} />{" "}
+            Unlimited storage
+          </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/support-icon.png")} />{" "}
             Full support 14 days
           </h5>
           <h5 level={5} className="pricing-info my-3">
+            <img alt="icon" src={require("assets/images/security-icon.png")} />{" "}
             Security guaranteed
           </h5>
 

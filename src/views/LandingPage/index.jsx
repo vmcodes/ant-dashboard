@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col, Typography, Button } from "antd";
 import { Link } from "react-router-dom";
 import Pricing from "./components/Pricing";
+import Description from "./components/Description";
+import Info from "./components/Info";
 const { Title } = Typography;
 
 const LandingPage = () => {
@@ -17,6 +19,7 @@ const LandingPage = () => {
                 alt="Object Press"
               />
             </Col>
+
             <Col xs={24} sm={24} md={0} lg={0} xl={0}>
               <div className="text-center">
                 <Link to="/login">
@@ -28,6 +31,7 @@ const LandingPage = () => {
               </div>
             </Col>
           </Row>
+
           <Row justify="center" className="login-wrapper">
             <Col span={12}>
               <Title className="text-light" level={1}>
@@ -57,6 +61,8 @@ const LandingPage = () => {
         </Col>
       </Row>
       <Pricing />
+      <Info />
+      <Description />
     </React.Fragment>
   );
 };
