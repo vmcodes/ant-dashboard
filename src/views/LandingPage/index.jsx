@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Pricing from "./components/Pricing";
 import Description from "./components/Description";
 import Info from "./components/Info";
+import Footer from "./components/Footer";
 const { Title } = Typography;
 
 const LandingPage = () => {
@@ -63,6 +64,7 @@ const LandingPage = () => {
       <Pricing />
       <Info />
       <Description />
+      <Footer />
     </React.Fragment>
   );
 };
