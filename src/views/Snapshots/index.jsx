@@ -80,7 +80,7 @@ export default function Snapshots() {
           <Button
             type="primary"
             icon={<PlusOutlined />}
-            className="snapshots-btn snapshots-content-add-btn"
+            className="snapshots-btn snapshots-content-add-btn pt-2"
             size="large"
             href="/snapshots/add"
           >

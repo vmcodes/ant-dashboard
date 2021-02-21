@@ -17,7 +17,7 @@ const Info = () => {
 
         <Col md={6} className="my-5">
           <Title type="secondary" level={2} className="my-3 text-center">
-            We are digital creative agency
+            We are a digital creative agency
           </Title>
           <Text type="secondary" className="my-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
