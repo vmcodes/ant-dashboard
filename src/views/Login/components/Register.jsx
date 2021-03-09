@@ -75,9 +75,13 @@ const RegisterForm = () => {
         </Form.Item>
       </Form.Item>
 
-      <Form.Item>
+      <Form.Item className="text-center">
         <Button type="primary" href="/dashboard" className="login-form-button">
           Sign up
+        </Button>
+        <p>OR</p>
+        <Button href="/" className="bg-success text-light login-form-button">
+          Back To Home
         </Button>
       </Form.Item>
     </Form>
