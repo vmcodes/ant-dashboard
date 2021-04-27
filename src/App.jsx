@@ -28,7 +28,7 @@ const App = () => {
                   children={
                     <Dashboard
                       component={<route.View />}
-                      location={route.Location}
+                      location={route.Name}
                     />
                   }
                 />
