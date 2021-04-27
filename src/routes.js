@@ -6,6 +6,7 @@ import Home from "views/Home";
 import ManageProfile from "views/ManageProfile";
 import Snapshots from "views/Snapshots";
 import AddSnapshots from "views/AddSnapshots";
+import TimeLine from "views/TimeLine";
 
 // Icons
 import {
@@ -58,7 +59,7 @@ export const Routes = [
     Layout: "dashboard-nav",
   },
   {
-    View: Home,
+    View: TimeLine,
     Icon: <LineChartOutlined style={{ fontSize: "24px" }} />,
     Name: "Time Line",
     Location: "/timeline",
