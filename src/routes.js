@@ -1,7 +1,5 @@
 import React from "react";
 // Views
-import LandingPage from "./views/LandingPage";
-import Login from "views/Login";
 import Home from "views/Home";
 import ManageProfile from "views/ManageProfile";
 import Snapshots from "views/Snapshots";
@@ -18,18 +16,6 @@ import {
 
 // Routes
 export const Routes = [
-  {
-    View: LandingPage,
-    Name: "Landing Page",
-    Location: "/",
-    Layout: "home",
-  },
-  {
-    View: Login,
-    Name: "Login",
-    Location: "/login",
-    Layout: "home",
-  },
   {
     View: Home,
     Icon: <AppstoreOutlined style={{ fontSize: "24px" }} />,

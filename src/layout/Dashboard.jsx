@@ -147,10 +147,10 @@ export default function Dashboard(props) {
               </Dropdown>
             </Col>
           </Row>
-        </Header>{" "}
+        </Header>
         <Header className="dashboard-inner" />
-        <Text type="secondary dashboard-subheader">{props.Location}</Text>
-        <Content className="m-5">{props.ChildComponent}</Content>
+        <Text type="secondary dashboard-subheader">{props.location}</Text>
+        <Content className="m-5">{props.component}</Content>
       </Layout>
     </Layout>
   );

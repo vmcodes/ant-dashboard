@@ -1,48 +1,43 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 // imports
 import ScrollToTop from "components/ScrollToTop";
-import Dashboard from "components/Dashboard";
-import { Routes } from "routes";
 import "assets/css/bootstrap.min.css";
 import "assets/less/antMotionStyle.less";
+import { Spin } from "antd";
+import { Routes } from "routes";
 
-function Views() {
-  let routes = [];
-
-  Routes.forEach((Path, index) => {
-    if (Path.Layout.includes("dashboard")) {
-      routes.push(
-        <Route
-          key={index}
-          exact={true}
-          path={Path.Location}
-          children={
-            <Dashboard Location={Path.Name} ChildComponent={<Path.View />} />
-          }
-        />
-      );
-    } else {
-      routes.push(
-        <Route
-          key={index}
-          exact={true}
-          path={Path.Location}
-          component={Path.View}
-        />
-      );
-    }
-  });
-  routes.push(<Redirect key="redirect" to="/" />);
-
-  return <Switch>{routes}</Switch>;
-}
+const LandingPage = lazy(() => import("views/LandingPage"));
+const Login = lazy(() => import("views/Login"));
+const Dashboard = lazy(() => import("layout/Dashboard"));
 
 const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop>
-        <Views />
+        <Suspense fallback={<Spin className="load-center" size="large" />}>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/login" component={Login} />
+
+            {Routes.map((route) => {
+              return (
+                <Route
+                  exact
+                  path={route.Location}
+                  children={
+                    <Dashboard
+                      component={<route.View />}
+                      location={route.Location}
+                    />
+                  }
+                />
+              );
+            })}
+
+            <Redirect to="/" />
+          </Switch>
+        </Suspense>
       </ScrollToTop>
     </BrowserRouter>
   );
