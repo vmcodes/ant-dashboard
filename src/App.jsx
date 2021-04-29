@@ -14,31 +14,28 @@ const Dashboard = lazy(() => import("layout/Dashboard"));
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop>
-        <Suspense fallback={<Spin className="load-center" size="large" />}>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/login" component={Login} />
+      <Suspense fallback={<Spin className="load-center" size="large" />}>
+        <ScrollToTop />
 
-            {Routes.map((route) => {
-              return (
-                <Route
-                  exact
-                  path={route.Location}
-                  children={
-                    <Dashboard
-                      component={<route.View />}
-                      location={route.Name}
-                    />
-                  }
-                />
-              );
-            })}
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/login" component={Login} />
 
-            <Redirect to="/" />
-          </Switch>
-        </Suspense>
-      </ScrollToTop>
+          {Routes.map((route) => {
+            return (
+              <Route
+                exact
+                path={route.Location}
+                children={
+                  <Dashboard component={<route.View />} location={route.Name} />
+                }
+              />
+            );
+          })}
+
+          <Redirect to="/" />
+        </Switch>
+      </Suspense>
     </BrowserRouter>
   );
 };

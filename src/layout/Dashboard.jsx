@@ -34,20 +34,6 @@ const menu = (
   </Menu>
 );
 
-const renderNav = () => {
-  return Routes.map((route) => {
-    if (route.Layout === "dashboard-nav") {
-      return (
-        <Menu.Item key={route.Location} icon={route.Icon}>
-          <Link to={route.Location}>{route.Name}</Link>
-        </Menu.Item>
-      );
-    } else {
-      return null;
-    }
-  });
-};
-
 export default function Dashboard(props) {
   let [collapsed, setCollapsed] = React.useState(false);
 
@@ -71,7 +57,13 @@ export default function Dashboard(props) {
           defaultSelectedKeys={[window.location.pathname]}
         >
           <Menu.ItemGroup key="g1" title="Main Navigation">
-            {renderNav()}
+            {Routes.map((route) => {
+              return (
+                <Menu.Item key={route.Location} icon={route.Icon}>
+                  <Link to={route.Location}>{route.Name}</Link>
+                </Menu.Item>
+              );
+            })}
           </Menu.ItemGroup>
           <Menu.ItemGroup key="g2" title="Support">
             <Menu.Item
